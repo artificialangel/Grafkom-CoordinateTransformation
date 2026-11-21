@@ -25,7 +25,6 @@ public class RotationDemo : MonoBehaviour
         LogRotation();
     }
 
-    // Gimbal lock: pitch (X) = 90 derajat membuat sumbu Y dan Z berimpit pada representasi Euler.
     [ContextMenu("Gimbal lock (Euler X = 90)")]
     void GimbalLock()
     {
@@ -34,7 +33,6 @@ public class RotationDemo : MonoBehaviour
         LogRotation();
     }
 
-    // Menghindari gimbal lock: gabungkan rotasi dengan quaternion.
     [ContextMenu("Hindari gimbal lock (Quaternion)")]
     void AvoidGimbalLock()
     {
